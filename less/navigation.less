@@ -1,1 +1,32 @@
 // Navigation code here
+.top-part {
+    // border: 2px solid yellow;
+    background-color: @nav-bg;
+
+    .flexbox(space-evenly, center, column);
+    
+    nav {
+        // border: 5px solid orange;
+        width: 50%;
+        font-size: 1.6rem;
+        .flexbox(space-between, center, row);
+        padding-top: .5%;
+        @media @phone {
+            // border: 2px solid pink;
+            width: 75%;
+        }       
+
+        a {
+            text-decoration: none;
+            color: @header-font-color;
+            font-weight: 500;
+            &:visited {
+                color: @header-font-color;
+            } //visited
+        } //a
+    } //nav
+    @media @phone {
+        width: 100%;
+        // border: 3px solid orange;
+    }
+}

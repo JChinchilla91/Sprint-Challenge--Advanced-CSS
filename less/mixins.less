@@ -1,1 +1,17 @@
 // Mixins Here
+.flexbox(@justify, @align, @flex){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @flex;
+}
+
+.bttnstyle (@background, @color) {
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    font-size: 1.6rem;
+    background: @background;
+    color: @color;
+    font-family: 'Russo One';
+}
